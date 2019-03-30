@@ -1,0 +1,100 @@
+.testimonial {
+    width:100%;
+    margin-top:5vh;
+    height:auto;
+}
+.testimonial__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.testimonial__center h1 {
+    opacity: 1;
+    font-family: 'Open Sans';
+    color: rgba(33,33,33,1);
+    font-weight: 400;
+    line-height: 42px;
+    font-size: 36px;
+}
+.testimonial__center__box {
+    width: 80%;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+}
+.testimonial__item{
+    width:calc(100% / 2 - 15px);
+    height: 25vh;
+    margin-bottom: calc(15px / 2 * 3);
+    background-size:cover;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial__img img {
+    height:25vh;
+    border-radius: 50%;
+    z-index:1000;
+    margin-right:20px;
+}
+.testimonial__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.testimonial__information h6 , .testimonial__information p {
+    margin :0;
+    margin-bottom: 15px;
+}
+.testimonial__information__first {
+    font-weight: 700;
+    line-height: 21px;
+    font-size: 17px;
+    text-align: left;
+}
+.testimonial__information__last {
+    color: rgba(158,158,158,1);
+    font-weight: 700;
+    line-height: 17px;
+    font-size: 13px;
+    text-align: left;
+}
+.testimonial__information p {
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 14px;
+    text-align: left;
+}
+@media (max-width:992px) {
+    .testimonial {
+        height:auto;
+    }
+    .testimonial__center__box {
+        width:50%;
+    }
+    .testimonial__item{
+        margin-bottom: 10vh;
+        width:calc(100%);
+        flex-wrap: wrap;
+    }
+    .testimonial__img img {
+        height:12.5vh;
+    }
+    .testimonial__information {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* @media (max-width:768px) {
+    .testimonial {
+        height:120vh;
+    }
+} */

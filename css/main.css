@@ -1,0 +1,45 @@
+@import "banner.css";
+@import "introduce.css";
+@import "information.css";
+@import "gallery.css";
+@import "details.css";
+@import "testimonial.css";
+@import "sponsors.css";
+@import "contact-us.css";
+
+body {
+    padding:0;
+    margin:0;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+.container::before, .container::after {
+    box-sizing: border-box;
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
